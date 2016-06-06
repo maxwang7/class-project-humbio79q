@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>I Think I'm</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">I think I'm human</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">I think I'm <span id="title">Human</span></span>
+                        <script>
+                            var titleTag = document.getElementById("title");
+                            var nouns = ['gay', 'lesbian', 'trans', 'asex', 'straight', 'unsure', 'human'];
+                            nouns.forEach(function(curVal, idx, arr) {
+                              var time = 1000 * idx;
+                              if(curVal === 'human') time += 1000;
+                              window.setTimeout(function() {
+                                titleTag.innerHTML = curVal;
+                              }, time);
+                            });
+                        </script>
+                        <hr class="star-light">
+                        <span class="skills">For when you're just not that sure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12 lead" style="text-indent:50px;">
+                          Maybe you’ve been looking around you and you realize you don’t feel or act the way that others do. Or you’re wondering why the world is the way it is. This website is for that time of questioning and curiosity.
+                        </div>
+                        <div class="col-lg-12 lead" style="text-indent:50px;">
+                          So what can this website help you? It can tell you what others have done and it will give you a chance to think about if that works for you. But a lot of it still comes down to you! What do you believe is right? How do you want to live your life? We can’t decide that for you, but we hope we’ll help.
+                        </div>
+                        <div class="col-lg-12 lead" style="text-indent:50px;">
+                          We wanted this website to be interactive. So we places for you to put down your thoughts and make this your own. To start:
+                        </div>
+                        <div class="col-lg-12 lead" style="text-indent:50px;">
+                          Sex is a topic that makes lots of people feel squeemish. But we think it’s important to talk about. So, type “SEX” (yes, use all caps) until you feel ready to dive in. Ready? GO!
+                        </div>
+                        <div class="col-lg-12 lead">
+                          <form>
+                            <textarea class="form-control" id="SEX" rows="5" style="outline: 1px solid rgb(0,0,0);">To get you started: SEX</textarea>
+                            <script>
+                              var SEX = document.getElementById("SEX");
+                              var last_count = 0;
+                              function countSEX() {
+                                var text = SEX.value;
+                                var count = (text.match(/SEX/g) || []).length;
+                                if (last_count < count) {
+                                  SEX.style.outline = "1px solid blue";
+                                  last_count = count;
+                                  var setGreen = function() {
+                                    SEX.style.outline = "3px solid green";
+                                  };
+                                  var setBlue = function() {
+                                    SEX.style.outline = "1px solid blue";
+                                  };
+                                  for(var m = 0; m < 10; m++) {
+                                    if(m % 2 == 0) {
+                                      window.setTimeout(setGreen, 100 * (m+1));
+                                    } else {
+                                      window.setTimeout(setBlue, 100 * (m+1));
+                                    }
+                                  }
+                               }
+                              }
+                              SEX.onchange = countSEX;
+                              SEX.onkeyup = countSEX;
+                            </script>
+                          </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Topics</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/identity.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/healthy relationships.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/healthy sexuality.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/school.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/family.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/film.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <h2>Identity</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/identity.png" class="img-responsive img-centered" alt="">
+                            <p>As humans, we have a certain biological sex: male, female, or intersex. But that biological sex doesn’t necessarily reflect our sexual gender identity, the gender we feel, or our sexual orientation, the gender of the people we are attracted to.</p>
+                            <p>Your identity isn’t a word. It’s who you are. And even though some of these words may help you describe who you are, don’t use it as a label for yourself. You goal is not to find a word, but to find yourself!</p>
+                            <p>There are a lot of ways that people identify. Here’s a short list we’ve put together. It’s not comprehensive, but it may start helping you think about your own identity:
+                            </p>
+                            <dl class="dl-horizontal">
+                              <dt>Gay</dt><dd>someone that's attracted (emotionally, sexually, romantically) to someone of the same gender</dd>
+                              <dt>Lesbian</dt><dd>a gay woman</dd>
+                              <dt>Bisexual</dt><dd>someone that's attracted to more than one sex, gender, or gender identity</dd>
+                              <dt>Transgender</dt><dd>describes people whose gender identity is different from the gender they were assigned at birth. Being transgender does not imply anything about your sexual orientation.</dd>
+                              <dt>Asex</dt><dd>people who don't feel sexual attraction for others, but may still feel an emotional attraction.</dd>
+                              <dt>Ally</dt><dd>a person who isn't LGBT, but shows support for LGBT people</dd>
+                              <dt>Closeted</dt><dd>used to describe an LGBT person who has not disclosed their sexual orientation or gender identity</dd>
+                            </dl>
+                           <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <h2>Healthy Relationships</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/healthy relationships.png" class="img-responsive img-centered" alt="">
+                            <p>There are a huge variety of relationships. But there’s also a lot of commonality. In most health relationships, both people have an emotional attachment that keeps them together long term, and they usually feel good about being together. And not just feel good about each other, but feel good about themselves. There are a lot of things that you can do to make a healthy relationship:
+                            </p>
+                            <dl>
+                              <dt>Trust</dt><dd>Trust is key. Knowing that your partner will be there for you and will be honest gives you confidence and builds long term commitment.</dd>
+                              <dt>Communication and Openness</dt><dd>Sharing is caring. If something bothers you, say it! If something great happened to you today, say it! If you pet the cutest puppy, say it! Healthy relationships are built on these shared memories and experiences, but you can’t build it if you don’t share them.</dd>
+                              <dt>A willingness to work at it together</dt><dd>Even in a healthy relationship, a lot of things aren’t going to go right. There will be miscommunications, tough situations, and fights. But being able to stick it through -- that can make all the difference.</dd>
+                            </dl>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <h2>Healthy Sexuality</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/healthy sexuality.png" class="img-responsive img-centered" alt="">
+                            <p>
+                              Your sexuality is an important part of your identity. Sexuality is composed of a lot of things: your sexual orientation, your sex identification, and your biological sex. The important thing is to think about how your feel and to not have those feelings be lost by what others tell you. Let’s think about each of these parts.
+                            </p>
+                            <p>
+                              <b>Biological sex</b> is the sex you’re born with, male, female, or intersex. What’s yours?
+                              <form>
+                                <textarea class="form-control" rows="3"></textarea>
+                              </form>
+                            </p>
+                            <p>
+                              <b>Sex identification </b>is how you choose to express your sexuality. It’s not connected with your biological sex. Transsexuals are people who identify as a different sex than their biological sex. Many have stories of growing up being treated as one sex but feeling that they’re the other. There are a lot of those stories online, some of them can be found <a href="http://www.lauras-playground.com/legacy/trans_bio_mtfts.htm">here</a>. How do you identify?
+                               <form>
+                                <textarea class="form-control" rows="3"></textarea>
+                              </form>
+                           </p>
+                            <p>
+                              <b>Sexual orientation </b>is who you’re attracted to. Straight describes those that are attracted to people of the opposite gender. Gay describes those that are attracted to people of the same gender. Gay is often used to describe males who are attracted to males, and lesbian is used to describe females that females. Many that are gay go through a “coming out” process. Again, there are a lot of these stories online (try <a href="http://whenicameout.com/">here</a>), and they may help you understand your feelings. Who are you attracted to?
+                                <form>
+                                <textarea class="form-control" rows="3"></textarea>
+                              </form>
+                          </p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <h2>Exploring Messages: School</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/school.png" class="img-responsive img-centered" alt="">
+                            <p>You get a lot of messages from school about your sexuality and relationships. It isn’t just sex ed. You get messages from your friends, your teachers, and the groups you participate in. They show you the “right” way to ask someone on a date. They call some people “needy” relationships and and others “distant.” It’s important to think about how these messages may influence your thinking. List some that you think of.
+                            </p>
+                            <p>Some examples of where school has influenced me are...</p>
+                            <form>
+                              <textarea class="form-control" rows="3"></textarea>
+                            </form>
+                            <p>Your school’s sex ed program can affect how you approach relationships and your own sexuality. Sex ed programs vary a lot, but many students, unfortunately, aren’t that happy with their program. Students often wish that their sex ed programs discuss more diversity and give them more information about developing healthy relationships. What are some things you wish your school’s sex ed programs told you more about?
+                            </p>
+                            <form>
+                              <textarea class="form-control" rows="3"></textarea>
+                            </form>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <h2>Family</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/family.png" class="img-responsive img-centered" alt="">
+                            <p>You probably think talking to your parents about sex is awkward. The thing is, they are probably just as scared to bring up the topic with you. Can you imagine how your parents felt when they had the first “sex talk” with you? They probably rehearsed the entire thing a dozen times.</p>
+                            <p>
+                            But talking about your sexuality with your parents is important. They can be a source of support and tell you about their experience growing up. It may seem awkward, but it can be a great experience for you and them.
+                            </p>
+                            <p>
+                            If you were your parents, how would you give yourself a sex talk?
+                            </p>
+                            <textarea class="form-control" rows="3"></textarea>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-left">
+                            <h2>Film</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/film.png" class="img-responsive img-centered" alt="">
+                            <p>All forms of media can influence our beliefs about relationships and sexuality, but film has an ability to show give us an impression of reality that makes it especially significant. It’s also easy to show, so watch the film clips, and after each one, write down how it affected you:
+                            </p>
+                            <p>
+                            The Notebook:
+                            </p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/lhLQjQ7amsA" frameborder="0" allowfullscreen></iframe>
+                            <p>What messages did you notice in this video?</p>
+                            <textarea class="form-control" rows="3"></textarea>
+                            <p>
+                            Brokeback Mountain: https://www.youtube.com/watch?v=KVK6yLqY54w
+                            </p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KVK6yLqY54w" frameborder="0" allowfullscreen></iframe>
+                             <p>What messages did you notice in this video?</p>
+                            <textarea class="form-control" rows="3"></textarea>
+                           <p>
+                            Movies are especially effective at showing what’s appropriate or inappropriate in our society. If you go search “sex” on Youtube, you’ll find a lot of the videos ask you to sign in with the message: “this video may be inappropriate for some users.” These explicit messages that certain kinds of behavior are “inappropriate” cause us to act differently.
+                            </p>
+                           <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+</html>
